@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580E88772BA84E21008C47F7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 580E88762BA84E21008C47F7 /* main.cpp */; };
+		580E887F2BA84E2D008C47F7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580E887E2BA84E2D008C47F7 /* GLUT.framework */; };
+		580E88812BA84E33008C47F7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580E88802BA84E33008C47F7 /* OpenGL.framework */; };
+		580FF9AD2BEC52F000380FD4 /* chahu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 589EE3652BEBD6BA005E60BB /* chahu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,13 @@
 
 /* Begin PBXFileReference section */
 		580E88732BA84E21008C47F7 /* OpenGL_Study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_Study; sourceTree = BUILT_PRODUCTS_DIR; };
-		580E88762BA84E21008C47F7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		580E887E2BA84E2D008C47F7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		580E88802BA84E33008C47F7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		580E88822BA84E52008C47F7 /* Print_Line.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Print_Line.cpp; sourceTree = "<group>"; };
+		5835A6212BAF00F10020B240 /* yongsizhongfangfahuaxian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = yongsizhongfangfahuaxian.cpp; sourceTree = "<group>"; };
+		585E94E82BBA7B52000C3E72 /* diyizhouzuoye.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = diyizhouzuoye.cpp; sourceTree = "<group>"; };
+		589EE3632BEB58F4005E60BB /* liulengzhui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = liulengzhui.cpp; sourceTree = "<group>"; };
+		589EE3652BEBD6BA005E60BB /* chahu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chahu.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580E88812BA84E33008C47F7 /* OpenGL.framework in Frameworks */,
+				580E887F2BA84E2D008C47F7 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +53,7 @@
 			children = (
 				580E88752BA84E21008C47F7 /* OpenGL_Study */,
 				580E88742BA84E21008C47F7 /* Products */,
+				580E887D2BA84E2D008C47F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +68,22 @@
 		580E88752BA84E21008C47F7 /* OpenGL_Study */ = {
 			isa = PBXGroup;
 			children = (
-				580E88762BA84E21008C47F7 /* main.cpp */,
+				580E88822BA84E52008C47F7 /* Print_Line.cpp */,
+				5835A6212BAF00F10020B240 /* yongsizhongfangfahuaxian.cpp */,
+				585E94E82BBA7B52000C3E72 /* diyizhouzuoye.cpp */,
+				589EE3632BEB58F4005E60BB /* liulengzhui.cpp */,
+				589EE3652BEBD6BA005E60BB /* chahu.cpp */,
 			);
 			path = OpenGL_Study;
+			sourceTree = "<group>";
+		};
+		580E887D2BA84E2D008C47F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				580E88802BA84E33008C47F7 /* OpenGL.framework */,
+				580E887E2BA84E2D008C47F7 /* GLUT.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580E88772BA84E21008C47F7 /* main.cpp in Sources */,
+				580FF9AD2BEC52F000380FD4 /* chahu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -253,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
