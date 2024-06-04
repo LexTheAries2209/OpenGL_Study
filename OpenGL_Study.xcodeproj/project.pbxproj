@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		580E887F2BA84E2D008C47F7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580E887E2BA84E2D008C47F7 /* GLUT.framework */; };
 		580E88812BA84E33008C47F7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580E88802BA84E33008C47F7 /* OpenGL.framework */; };
-		58E922892C0EE59900EEDE6F /* chahu-light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E922882C0EE59900EEDE6F /* chahu-light.cpp */; };
+		58E9228B2C0EF3C500EEDE6F /* taiyangxi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58E9228A2C0EF3C500EEDE6F /* taiyangxi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +34,7 @@
 		589EE3632BEB58F4005E60BB /* liulengzhui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = liulengzhui.cpp; sourceTree = "<group>"; };
 		589EE3652BEBD6BA005E60BB /* chahu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chahu.cpp; sourceTree = "<group>"; };
 		58E922882C0EE59900EEDE6F /* chahu-light.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "chahu-light.cpp"; sourceTree = "<group>"; };
+		58E9228A2C0EF3C500EEDE6F /* taiyangxi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = taiyangxi.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 				589EE3632BEB58F4005E60BB /* liulengzhui.cpp */,
 				589EE3652BEBD6BA005E60BB /* chahu.cpp */,
 				58E922882C0EE59900EEDE6F /* chahu-light.cpp */,
+				58E9228A2C0EF3C500EEDE6F /* taiyangxi.cpp */,
 			);
 			path = OpenGL_Study;
 			sourceTree = "<group>";
@@ -145,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58E922892C0EE59900EEDE6F /* chahu-light.cpp in Sources */,
+				58E9228B2C0EF3C500EEDE6F /* taiyangxi.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
