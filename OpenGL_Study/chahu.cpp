@@ -6,6 +6,7 @@
 //
 
 #include <GLUT/glut.h>
+#include <stdlib.h> // 引入stdlib.h以使用exit函数
 
 int viewIndex = 0; // 当前视图方向的索引
 bool depthEnabled = true; // 深度测试是否启用
@@ -91,6 +92,15 @@ void mouse(int button, int state, int x, int y) {
     }
 }
 
+// 键盘事件处理函数
+void keyboard(unsigned char key, int x, int y) {
+    switch (key) {
+        case 27: // ESC键的ASCII码是27
+            exit(0); // 退出程序
+            break;
+    }
+}
+
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
@@ -100,7 +110,8 @@ int main(int argc, char** argv) {
     init();
     glutDisplayFunc(display);
     glutReshapeFunc(reshape);
-    glutMouseFunc(mouse); // 注册鼠标点击事件处理函数
+    glutMouseFunc(mouse);
+    glutKeyboardFunc(keyboard); // 注册键盘事件处理函数
     glutMainLoop();
     return 0;
 }
